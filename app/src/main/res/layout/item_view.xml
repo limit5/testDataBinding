@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+                name="data"
+                type="com.yut3.testdatabinding.MyData" />
+    </data>
+
+
+    <LinearLayout
+                  android:id="@+id/original_LinearLayout"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@{data.name}" />
+
+    </LinearLayout>
+</layout>
