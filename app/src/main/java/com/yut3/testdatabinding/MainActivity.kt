@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         val list = ArrayList<MyData>()
         for (i in 0..99) {
-            list.add(MyData(i.toString()))
+            list.add(MyData(i, i + 100, i.toString()))
         }
 
         val layoutManager = LinearLayoutManager(this)
